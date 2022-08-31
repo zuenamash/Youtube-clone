@@ -72,3 +72,9 @@ const makeVideoCard = (data) => {
 }
 const searchInput = document.querySelector('.search-bar');
 const searchBtn = document.querySelector('.search-btn');
+
+searchBtn.addEventListener('click', () => {
+    if(searchInput.value.length){
+        location.href = searchLink + searchInput.value;
+    }
+})
